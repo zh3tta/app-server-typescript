@@ -12,11 +12,11 @@ export class CategoryService extends BaseService<CategoryEntity> {
         return (await this.execRepository).find();
     }
 
-    async findCategoryById(id: string): Promise<CategoryEntity | undefined> {
-        return (await this.execRepository).findOne({ id });
+    async findCategoryById(id: string): Promise<CategoryEntity | null> {
+        return (await this.execRepository).findOneBy({ id });
     }
 
-    async findCategoryWithProduct(categoryId: string): Promise<CategoryEntity | undefined> {
+    async findCategoryWithProduct(categoryId: string): Promise<CategoryEntity | null> {
         return (await this.execRepository).createQueryBuilder("category")
                                           .leftJoinAndSelect("category.products", "products")
                                           .where({ id: categoryId })

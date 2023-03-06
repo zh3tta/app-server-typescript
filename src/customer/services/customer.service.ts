@@ -13,8 +13,8 @@ export class CustomerService extends BaseService<CustomerEntity> {
         return (await this.execRepository).find();
     }
 
-    async findCustomerById(id: string): Promise<CustomerEntity | undefined> {
-        return (await this.execRepository).findOne({ id });
+    async findCustomerById(id: string): Promise<CustomerEntity | null> {
+        return (await this.execRepository).findOneBy({ id });
     } 
 
     async createCustomer(body: CustomerDTO): Promise<CustomerEntity | undefined> {
