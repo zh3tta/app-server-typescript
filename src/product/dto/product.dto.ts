@@ -10,7 +10,7 @@ export class ProductDTO extends BaseDTO {
     description!: string;
 
     @IsNotEmpty()
-    price!: string;
+    price!: number;
 
     @IsNotEmpty()
     category!: CategoryEntity;
