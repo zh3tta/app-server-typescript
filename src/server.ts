@@ -2,17 +2,17 @@ import "reflect-metadata";
 import express  from "express";
 import morgan from "morgan";
 import cors from "cors";
-import { UserRouter } from "./user/user.router";
 import { ConfigServer } from "./config/config";
 import { DataSource } from "typeorm";
-import { PurchaseRouter } from "./purchase/purchase.router";
-import { ProductRouter } from "./product/product.router";
-import { CustomerRouter } from "./customer/customer.router";
-import { CategoryRouter } from "./category/category.router";
-import { PurchaseProductRouter } from "./purchase/purchases-products.router";
 import { LoginStrategy } from "./auth/strategies/login.strategy";
 import { JwtStrategy } from "./auth/strategies/jwt.strategy";
-import { AuthRouter } from "./auth/auth.router";
+const { UserRouter, 
+        PurchaseRouter, 
+        ProductRouter, 
+        CustomerRouter,
+        CategoryRouter,
+        PurchaseProductRouter,
+        AuthRouter } = require("./routes/index");
 
 class ServerBootstrap extends ConfigServer {
     public app: express.Application = express();
