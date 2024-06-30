@@ -1,6 +1,6 @@
-# API REST con Typescript
+# API REST with Typescript
 
-Este proyecto es una api-rest realiza con Nodejs, express y typescript como tecnologias principales, además utiliza mysql para almacenar datos. El mismo posee secciones de categoria, clientes, productos, compras, compras de productos y usuarios. Incluye metodos de autenticación mediante json web token para el login.
+This project is an api-rest performs with Nodejs, express and typescript as main technologies, also uses mysql to store data. It has sections of category, customers, products, purchases, purchases of products and users. Includes authentication methods using json web token for the login.
 
 ## Instalación
 
