@@ -29,5 +29,3 @@ Esta aplicación necesita las siguientes variables de entorno:
 - `DB_PASS` contraseña de base de datos
 - `DB_HOST` servidor de base de datos
 - `JWT_SECRET` llave secreta generada con JWT
-
-[@byZhetta](https://github.com/byZhetta)
