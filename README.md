@@ -5,7 +5,7 @@ This project is an api-rest performs with Nodejs, express and typescript as main
 ## Instalación
 
 ```bash
-git clone https://github.com/byZhetta/app-server-typescript.git
+git clone https://github.com/zh3tta/app-server-typescript.git
 cd app-server-typescript
 npm install
 npm run start:dev
